@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn the story behind TravelFreeFrom. We write honest, practical Bali travel guides without affiliate pressure or influencer fluff. Just real advice from people who actually explore the island.">
+    <meta name="keywords" content="about TravelFreeFrom, Bali travel blog creators, honest Bali guides, independent travel writers Bali">
+    <meta name="author" content="TravelFreeFrom">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="About Us - TravelFreeFrom">
+    <meta property="og:description" content="We write honest, practical Bali travel guides without affiliate pressure or influencer fluff. Just real advice from people who actually explore the island.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://travelfreefrom.com/about.html">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://travelfreefrom.com/about.html">
+    
+    <title>About Us - TravelFreeFrom | Authentic Bali Travel Stories</title>
+    
+    <!-- Performance & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a202c;
+            --primary: #2d3748;
+            --secondary: #3182ce;
+            --accent: #ed8936;
+            --light: #f8fafc;
+            --border: #e2e8f0;
+            --muted: #64748b;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+            --radius: 16px;
+            --transition: all 0.25s ease;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.75; color: var(--text); background: var(--bg); -webkit-font-smoothing: antialiased; }
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        
+        /* Header */
+        header { background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 1000; }
+        .nav-inner { max-width: 1200px; margin: 0 auto; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.5px; background: linear-gradient(135deg, #3182ce 0%, #805ad5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+        .nav-links a { font-weight: 600; color: var(--primary); font-size: 0.95rem; }
+        .nav-links a:hover { color: var(--secondary); }
+        .mobile-btn { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
+        .mobile-btn span { display: block; width: 24px; height: 2.5px; background: var(--primary); margin: 4px 0; border-radius: 2px; }
+        
+        /* Hero Section */
+        .hero { position: relative; height: 50vh; min-height: 350px; display: flex; align-items: flex-end; overflow: hidden; background: linear-gradient(135deg, #3182ce 0%, #805ad5 100%); }
+        .hero-content { position: relative; z-index: 2; max-width: 900px; margin: 0 auto; padding: 2.5rem 2rem 3.5rem; color: white; width: 100%; }
+        .hero h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; line-height: 1.15; margin-bottom: 1rem; text-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+        .hero p { font-size: 1.15rem; opacity: 0.9; max-width: 650px; }
+        
+        /* Content Container */
+        .article-container { max-width: 780px; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+        .article-container p { margin-bottom: 1.6rem; font-size: 1.15rem; color: #374151; }
+        .article-container h2 { font-family: 'Playfair Display', serif; font-size: 1.9rem; color: var(--primary); margin: 2.5rem 0 1rem; line-height: 1.3; }
+        .article-container ul { margin: 1rem 0 1.5rem 1.5rem; }
+        .article-container li { margin-bottom: 0.6rem; font-size: 1.1rem; }
+        .article-container a { color: var(--secondary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(49,130,206,0.4); }
+        .article-container a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+        
+        .highlight-box { background: var(--light); border-left: 4px solid var(--secondary); padding: 1.5rem; border-radius: 0 12px 12px 0; margin: 2.2rem 0; }
+        .highlight-box strong { color: var(--primary); display: block; margin-bottom: 0.4rem; }
+        
+        /* Related Section */
+        .related { max-width: 1100px; margin: 3rem auto 5rem; padding: 0 1.5rem; }
+        .related h2 { font-family: 'Playfair Display', serif; font-size: 1.8rem; text-align: center; margin-bottom: 2rem; color: var(--primary); }
+        .related-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+        .rel-card { background: var(--light); padding: 1.5rem; border-radius: var(--radius); border: 1px solid var(--border); transition: var(--transition); }
+        .rel-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); border-color: var(--secondary); }
+        .rel-card h3 { font-size: 1.15rem; margin-bottom: 0.4rem; line-height: 1.35; }
+        .rel-card p { font-size: 0.95rem; color: var(--muted); margin: 0; }
+        
+        /* Footer */
+        footer { background: var(--primary); color: #cbd5e1; padding: 3.5rem 1.5rem 2rem; margin-top: 4rem; }
+        .footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
+        .f-col h4 { color: white; margin-bottom: 1rem; font-size: 1.1rem; }
+        .f-links { list-style: none; }
+        .f-links li { margin-bottom: 0.6rem; }
+        .f-links a:hover { color: white; text-decoration: underline; }
+        .footer-bottom { max-width: 1100px; margin: 0 auto; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.15); text-align: center; font-size: 0.85rem; color: #94a3b8; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: white; flex-direction: column; padding: 1rem 1.5rem; gap: 1rem; box-shadow: var(--shadow); border-top: 1px solid var(--border); }
+            .nav-links.active { display: flex; }
+            .mobile-btn { display: block; }
+            .hero h1 { font-size: 2rem; }
+            .article-container { padding: 2rem 1.25rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-inner">
+            <div class="logo">TravelFreeFrom</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" style="color:var(--secondary)">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-btn" id="mobileBtn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; About Us</div>
+                <h1>Real Stories. Honest Guides. Zero Fluff.</h1>
+                <p>We write practical Bali travel advice from people who actually explore the island. No sponsored itineraries. No exaggerated claims. Just clear, tested recommendations.</p>
+            </div>
+        </section>
+
+        <article class="article-container">
+            <p>Let’s be completely honest about modern travel writing for a second. Most destination guides read like carefully edited press releases, heavily filtered photography portfolios, or thinly disguised affiliate marketing campaigns. We started TravelFreeFrom because we genuinely grew tired of recommending places we hadn’t actually visited, repeating outdated pricing, and pretending every tourist trap was somehow a hidden gem. Bali deserves better guidance. Travelers deserve transparent advice. We decided to build a platform that prioritizes actual experience over polished fiction.</p>
+
+            <h2>How This Project Actually Started</h2>
+            <p>The idea emerged during a particularly frustrating rainy afternoon in Ubud anyway. We were sitting in a local café, watching three separate influencers aggressively stage the same rice terrace photograph while completely ignoring the actual farming community working just fifty meters away. That moment perfectly captured everything wrong with contemporary destination content. It wasn’t about sharing genuine experiences anymore. It was about manufacturing engagement through carefully controlled environments and aggressively edited narratives.</p>
+
+            <p>We packed our notebooks, downloaded offline maps, and started documenting the island exactly as it naturally operates. We walked unpaved village paths, negotiated respectful vendor interactions, tested transportation logistics, and verified every single price before publishing anyway. The entire process required patience, consistent field research, and a willingness to admit when our initial assumptions were completely wrong. That commitment to accuracy remains the foundational principle behind every guide we publish today.</p>
+
+            <h2>Why the Name Actually Makes Sense</h2>
+            <p>The phrase TravelFreeFrom isn’t just a clever branding exercise anyway. It represents a genuine philosophy about how vacation planning should actually function. Travel free from aggressive commission structures, free from rushed itinerary pressure, free from exaggerated marketing claims, and free from the exhausting need to constantly perform for social media algorithms. We genuinely believe that exploration should feel naturally liberating instead of meticulously scheduled.</p>
+
+            <p>You won’t find artificially inflated review scores, paid promotional placements, or strategically hidden disclaimer paragraphs anyway. Every recommendation undergoes physical verification, direct operator communication, and practical comfort testing before publication. If a trail becomes dangerously slippery, we update the guide immediately. If a restaurant changes ownership or quality noticeably declines, we adjust the content accordingly. Transparency consistently outperforms polished fiction anyway.</p>
+
+            <div class="highlight-box">
+                <strong>💡 Our Core Promise</strong>
+                We never publish untested itineraries, accept undisclosed sponsorships, or prioritize affiliate commissions over genuine traveler comfort. Every guide reflects actual field experience, verified pricing, and respectful local partnership standards.
+            </div>
+
+            <h2>What We Actually Stand For</h2>
+            <p>Authentic exploration requires genuine cultural respect anyway. We consistently emphasize responsible tourism practices that directly support local communities, preserve fragile natural environments, and maintain traditional livelihood structures across developing regions. Our guides frequently highlight neighborhood family businesses, traditional artisan workshops, and independently operated accommodations that rarely receive mainstream marketing exposure anyway.</p>
+
+            <p>We strongly encourage mindful photography practices, respectful temple etiquette, and realistic pacing schedules that naturally prevent traveler exhaustion anyway. Bali operates on community rhythm, not commercial convenience. Understanding that fundamental difference completely transforms your daily experience from stressful navigation into genuine cultural immersion. We consistently remind readers that destinations remain living ecosystems rather than manufactured entertainment venues anyway.</p>
+
+            <h2>Who Actually Writes These Guides</h2>
+            <p>Our content team consists of independent researchers, experienced regional travelers, and local cultural advisors who actively verify information across multiple seasonal periods anyway. We don’t employ corporate marketing departments, automated content generators, or remotely based copywriters who have never actually walked the described trails. Every article undergoes physical route testing, operator interview verification, and seasonal condition confirmation before publication.</p>
+
+            <p>We regularly update older guides, remove outdated pricing structures, and adjust safety recommendations when environmental conditions naturally shift anyway. If you notice a trail modification, transportation route change, or venue closure, we genuinely appreciate direct community feedback. Continuous improvement relies entirely on honest traveler communication and consistent on-ground verification anyway. This collaborative approach keeps our content reliably accurate across rapidly changing destination landscapes.</p>
+
+            <h2>How You Can Support Genuine Travel Writing</h2>
+            <p>Independent destination journalism survives through consistent reader engagement anyway. Share verified guides with fellow travelers, leave constructive feedback when information proves helpful, and consistently prioritize responsibly operated businesses during your own excursions. Your booking decisions directly influence which accommodations, tour operators, and neighborhood vendors successfully maintain sustainable employment practices anyway.</p>
+
+            <p>We never push unnecessary premium upgrades or aggressively promote commission-driven services anyway. Simply choose transparent operators, respect local environmental guidelines, and maintain flexible scheduling that naturally accommodates unpredictable tropical conditions. When travelers consistently reward honesty over manufactured hype, the entire destination ecosystem gradually improves for everyone involved anyway. Thank you for reading responsibly, and we genuinely hope your next journey feels completely stress-free.</p>
+        </article>
+
+        <section class="related">
+            <h2>Continue Your Journey</h2>
+            <div class="related-grid">
+                <a href="index.html" class="rel-card">
+                    <h3>Explore All Bali Guides</h3>
+                    <p>Discover verified adventure tips, transportation strategies, and seasonal planning advice for stress-free travel.</p>
+                </a>
+                <a href="contact.html" class="rel-card">
+                    <h3>Send Us Direct Feedback</h3>
+                    <p>Help us improve content accuracy by sharing your real experience, route updates, or practical suggestions.</p>
+                </a>
+                <a href="bali-daily-budget-backpacker-luxury.html" class="rel-card">
+                    <h3>Bali Daily Budget Breakdown</h3>
+                    <p>Learn exactly what to expect financially across different travel styles with transparent seasonal pricing.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="f-col">
+                <h4>About TravelFreeFrom</h4>
+                <p>Your trusted guide to authentic Bali adventures. We share honest reviews, local insights, and practical tips to help you explore freely and responsibly.</p>
+            </div>
+            <div class="f-col">
+                <h4>Quick Links</h4>
+                <ul class="f-links">
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="f-col">
+                <h4>Popular Guides</h4>
+                <ul class="f-links">
+                    <li><a href="mount-batur-sunrise-trekking-cost-guide.html">Mount Batur Sunrise</a></li>
+                    <li><a href="best-bali-atv-quad-bike-ride-ubud.html">ATV Adventure</a></li>
+                    <li><a href="white-water-rafting-bali-ayung-river-guide.html">White Water Rafting</a></li>
+                    <li><a href="ubud-rice-terraces-things-to-do.html">Ubud Travel Guide</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TravelFreeFrom.com. All rights reserved. | Made with ❤️ for Bali travelers</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobileBtn').addEventListener('click', () => {
+            document.getElementById('navLinks').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

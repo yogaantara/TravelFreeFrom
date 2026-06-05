@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oops! This page took a wrong turn in Bali traffic. Let's get you back on track with verified travel guides.">
+    <meta name="robots" content="noindex, follow">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Page Not Found - TravelFreeFrom">
+    <meta property="og:description" content="This page went on an adventure and hasn't returned yet. Let's find you something useful instead.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://travelfreefrom.com/404.html">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://travelfreefrom.com/404.html">
+    
+    <title>404 - Page Not Found | TravelFreeFrom</title>
+    
+    <!-- Performance & Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a202c;
+            --primary: #2d3748;
+            --secondary: #3182ce;
+            --accent: #ed8936;
+            --light: #f8fafc;
+            --border: #e2e8f0;
+            --muted: #64748b;
+            --shadow: 0 4px 20px rgba(0,0,0,0.08);
+            --radius: 16px;
+            --transition: all 0.25s ease;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', system-ui, sans-serif; line-height: 1.75; color: var(--text); background: var(--bg); -webkit-font-smoothing: antialiased; min-height: 100vh; display: flex; flex-direction: column; }
+        img { max-width: 100%; height: auto; display: block; }
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        
+        /* Header */
+        header { background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 1000; }
+        .nav-inner { max-width: 1200px; margin: 0 auto; padding: 1rem 1.5rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.5px; background: linear-gradient(135deg, #3182ce 0%, #805ad5 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+        .nav-links a { font-weight: 600; color: var(--primary); font-size: 0.95rem; }
+        .nav-links a:hover { color: var(--secondary); }
+        .mobile-btn { display: none; background: none; border: none; cursor: pointer; padding: 0.5rem; }
+        .mobile-btn span { display: block; width: 24px; height: 2.5px; background: var(--primary); margin: 4px 0; border-radius: 2px; }
+        
+        /* 404 Hero */
+        .error-hero { flex: 1; display: flex; align-items: center; justify-content: center; padding: 4rem 2rem; background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%); }
+        .error-content { max-width: 700px; text-align: center; }
+        .error-code { font-family: 'Playfair Display', serif; font-size: 8rem; font-weight: 700; color: var(--secondary); line-height: 1; margin-bottom: 1rem; opacity: 0.3; }
+        .error-title { font-family: 'Playfair Display', serif; font-size: 2.2rem; color: var(--primary); margin-bottom: 1rem; }
+        .error-message { font-size: 1.15rem; color: var(--muted); margin-bottom: 2.5rem; max-width: 550px; margin-left: auto; margin-right: auto; }
+        
+        /* Search Box */
+        .search-box { background: white; padding: 1.5rem; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow); margin-bottom: 2.5rem; }
+        .search-box form { display: flex; gap: 0.75rem; }
+        .search-box input { flex: 1; padding: 0.85rem 1rem; border: 1px solid var(--border); border-radius: 8px; font-family: inherit; font-size: 1rem; }
+        .search-box input:focus { outline: none; border-color: var(--secondary); box-shadow: 0 0 0 3px rgba(49,130,206,0.1); }
+        .search-box button { background: var(--secondary); color: white; padding: 0.85rem 1.5rem; border: none; border-radius: 8px; font-weight: 600; cursor: pointer; transition: var(--transition); }
+        .search-box button:hover { background: #2a6cb5; }
+        
+        /* Quick Links */
+        .quick-links { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-bottom: 2.5rem; }
+        .quick-link { background: white; padding: 1.25rem; border-radius: var(--radius); border: 1px solid var(--border); text-align: left; transition: var(--transition); }
+        .quick-link:hover { border-color: var(--secondary); transform: translateY(-3px); box-shadow: var(--shadow); }
+        .quick-link h4 { color: var(--primary); margin-bottom: 0.25rem; font-size: 1rem; }
+        .quick-link p { color: var(--muted); font-size: 0.9rem; margin: 0; }
+        
+        /* CTA Button */
+        .cta-button { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--secondary); color: white; padding: 0.9rem 2rem; border-radius: 50px; font-weight: 600; transition: var(--transition); }
+        .cta-button:hover { background: #2a6cb5; transform: translateY(-2px); }
+        
+        /* Footer */
+        footer { background: var(--primary); color: #cbd5e1; padding: 2.5rem 1.5rem 1.5rem; }
+        .footer-bottom { max-width: 1100px; margin: 0 auto; text-align: center; font-size: 0.85rem; color: #94a3b8; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: white; flex-direction: column; padding: 1rem 1.5rem; gap: 1rem; box-shadow: var(--shadow); border-top: 1px solid var(--border); }
+            .nav-links.active { display: flex; }
+            .mobile-btn { display: block; }
+            .error-code { font-size: 6rem; }
+            .error-title { font-size: 1.75rem; }
+            .search-box form { flex-direction: column; }
+            .quick-links { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-inner">
+            <div class="logo">TravelFreeFrom</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-btn" id="mobileBtn" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="error-hero">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1 class="error-title">This Page Went on an Adventure</h1>
+            <p class="error-message">Like a scooter that took a wrong turn in Ubud traffic, this page seems to have wandered off. But don't worry—we've got plenty of verified guides to get your Bali planning back on track.</p>
+            
+            <div class="search-box">
+                <form action="index.html" method="get" onsubmit="event.preventDefault(); alert('Search is demo-only on this static site. Try browsing our guides below!');">
+                    <input type="search" placeholder="Search for 'waterfall', 'driver', 'Ubud'...">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+            
+            <div class="quick-links">
+                <a href="index.html" class="quick-link">
+                    <h4>🏠 All Bali Guides</h4>
+                    <p>Browse every verified article</p>
+                </a>
+                <a href="how-to-hire-private-driver-bali-prices-tips.html" class="quick-link">
+                    <h4>🚗 Private Driver Guide</h4>
+                    <p>Stress-free transport tips</p>
+                </a>
+                <a href="mount-batur-sunrise-trekking-cost-guide.html" class="quick-link">
+                    <h4>🌋 Mount Batur Sunrise</h4>
+                    <p>Complete trekking guide</p>
+                </a>
+                <a href="when-is-best-time-visit-bali-weather.html" class="quick-link">
+                    <h4>📅 Best Time to Visit</h4>
+                    <p>Weather & crowd insights</p>
+                </a>
+            </div>
+            
+            <a href="index.html" class="cta-button">
+                ← Back to All Guides
+            </a>
+            
+            <p style="margin-top:2rem;font-size:0.95rem;color:var(--muted);">
+                Still can't find what you need? 
+                <a href="contact.html" style="color:var(--secondary);font-weight:600;text-decoration:underline;">Contact us</a> 
+                and we'll help personally.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2026 TravelFreeFrom.com. All rights reserved. | Made with ❤️ for Bali travelers</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('mobileBtn').addEventListener('click', () => {
+            document.getElementById('navLinks').classList.toggle('active');
+        });
+        
+        // Fun easter egg: Konami code triggers confetti
+        let konamiCode = ['ArrowUp','ArrowUp','ArrowDown','ArrowDown','ArrowLeft','ArrowRight','ArrowLeft','ArrowRight','b','a'];
+        let konamiIndex = 0;
+        document.addEventListener('keydown', (e) => {
+            if (e.key === konamiCode[konamiIndex]) {
+                konamiIndex++;
+                if (konamiIndex === konamiCode.length) {
+                    alert('🎉 You found the secret Bali confetti! (Just kidding, but you get bonus travel karma.)');
+                    konamiIndex = 0;
+                }
+            } else {
+                konamiIndex = 0;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+# robots.txt for TravelFreeFrom.com
+# Last updated: June 2026
+# Purpose: Guide search engines to crawl our verified Bali travel guides
+
+# Allow all well-behaved crawlers
+User-agent: *
+Allow: /
+
+# Crawl delay for respectful scraping
+Crawl-delay: 1
+
+# Sitemap location for faster indexing
+Sitemap: https://travelfreefrom.com/sitemap.xml
+
+# Block common bot traps & low-value paths
+Disallow: /assets/
+Disallow: /seo/
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+Disallow: /temp/
+
+# Specific rules for image crawlers (optimize bandwidth)
+User-agent: Googlebot-Image
+Allow: /assets/images/articles/
+Disallow: /assets/images/temp/
+
+# Specific rules for AI training crawlers (opt-out per ethical guidelines)
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+# Block aggressive scrapers that ignore crawl-delay
+User-agent: *
+Disallow: /*.json$
+Disallow: /*.xml$
+Sitemap: https://travelfreefrom.com/sitemap.xml
